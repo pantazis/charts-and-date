@@ -12,8 +12,9 @@
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery/src/sizzle/dist/sizzle.js"></script>
+    <script src="bower_components/jquery/src/sizzle/dist/sizzle.js"></script>    
     <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/moment/locale/el.js"></script>
     <script src="bower_components/knockout/dist/knockout.js"></script>
     <script src="bower_components/knockout-daterangepicker/dist/daterangepicker.js?<?=rand(1,1000)?>"></script>
     <?php include 'data.php' ?>
@@ -42,9 +43,7 @@ const tableConfig = {
 }
 
 //data after selection
-var filteredData={
-
-};
+var filteredData;
 
 
 $(".dateButton").daterangepicker({
@@ -60,8 +59,6 @@ $(".dateButton").daterangepicker({
   var start =Obj.startDate;
   var end = Obj.endDate;
 
-
- 
   $(this).html(start + ' – ' + end );
   getCalendarData(start,end,period)
   getQueriedData();
