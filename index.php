@@ -20,6 +20,7 @@
    
     <script>
 /*get data form daterangepicker*/
+var dateFormat ="DD/MM/YYYY";
 var Obj  ={
   startDate:"",
   endDate:""
@@ -29,17 +30,22 @@ const  searchDataObj={
   endDate:null,
   period:null
 }
-/*cofiguration for each chart*/ 
+//cofiguration for each chart
 const tableConfig = {
 
 }
+
+//data after selection
+var filteredData={
+
+};
 
 
 $(".dateButton").daterangepicker({
   minDate: moment().subtract(2, 'years')
 }, function (startDate, endDate, period) { 
-  startDate = startDate.format("DD-MM-YYYY");
-  endDate = endDate.format("DD-MM-YYYY");
+  startDate = startDate.format(dateFormat);
+  endDate = endDate.format(dateFormat);
   
   hackDates(period);
 
@@ -95,21 +101,21 @@ function getQueriedData(){
  var startDate = searchDataObj.startDate;
  var endDate = searchDataObj.endDate;
 
- var aaa =data[period][startDate];
-console.log(aaa,period)
- 
+var starDateEndOfDay = moment(startDate,"DDMMYYYY").startOf(period);
+var endDateEndOfDay = moment(endDate,"DDMMYYYY").startOf(period);
 
+filteredData = {};
+filteredData.period = period;
+filteredData[starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
+
+
+while ( starDateEndOfDay.add(1, period+'s').diff(endDateEndOfDay) <= 0 ) { 
+ 
+  filteredData[starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
 
 }
-
-
-
-
-
-
-
-
-
+console.log(filteredData);
+}
 </script>
    
 
