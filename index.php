@@ -19,6 +19,12 @@
     <?php include 'data.php' ?>
    
     <script>
+/*      
+Stacked Bar Chart with Groups
+Line Chart
+Doughnut
+Line Chart Boundaries
+*/
 /*get data form daterangepicker*/
 var dateFormat ="DD/MM/YYYY";
 var Obj  ={
