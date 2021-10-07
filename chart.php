@@ -1,16 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<canvas class="chart1" width="400" height="400"></canvas>
-<canvas class="chart2" width="400" height="400"></canvas>
-<canvas class="chart3" width="400" height="400"></canvas>
-<canvas class="chart4" width="400" height="400"></canvas>
+
+<style>
+.parent {
+    display: flex;
+    width: 100%;
+   
+    flex-wrap:wrap;
+  
+}
+.canvas-c {
+    width: 50%;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resio {
+    width: 50%;
+}
+
+
+</style> 
+<div class="parent">
+<div class="canvas-c">
+  <div class="resio">
+    <canvas class="chart1" width="400" height="400"></canvas>
+  </div>
+</div>
+<div class="canvas-c">
+  <div class="resio">
+    <canvas class="chart2" width="400" height="400"></canvas>
+  </div>
+</div>
+<div class="canvas-c">
+  <div class="resio">
+    <canvas class="chart3" width="400" height="400"></canvas>
+  </div>
+</div>
+<div class="canvas-c">
+  <div class="resio">
+    <canvas class="chart4" width="400" height="400"></canvas>
+  </div>
+</div>
+
+
+</div> 
+
 
 
 
@@ -20,7 +54,7 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="chartdata.js"></script>
 <script type="text/javascript" src="chartconfig.js"></script>
 
 <script>

@@ -9,6 +9,7 @@
 </head>
 <body>
     <button class="dateButton"  data-bind="daterangepicker: dateRange,  daterangepickerOptions: { maxDate: moment() }">Επιλογή Εύρους Ημερομηνιών</button>
+    <?php include "chart.php"?>
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -17,9 +18,23 @@
     <script src="bower_components/moment/locale/el.js"></script>
     <script src="bower_components/knockout/dist/knockout.js"></script>
     <script src="bower_components/knockout-daterangepicker/dist/daterangepicker.js?<?=rand(1,1000)?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script type="text/javascript" src="chartdata.js"></script>
+    <script type="text/javascript" src="chartconfig.js"></script>
+
     <?php include 'data.php' ?>
 
     <script>
+/*--------------------init chart ------------------------------------*/
+var chart1= $('.chart1')[0].getContext('2d');
+var myChart = new Chart(chart1,chartConfig.chart1);
+var chart2= $('.chart2')[0].getContext('2d');
+var myChart2 = new Chart(chart2,chartConfig.chart2);
+var chart3= $('.chart3')[0].getContext('2d');
+var myChart3 = new Chart(chart3,chartConfig.chart3);
+var chart4= $('.chart4')[0].getContext('2d');
+var myChart4 = new Chart(chart4,chartConfig.chart4);
+/*--------------------init chart end ------------------------------------*/
 /*
 Stacked Bar Chart with Groups
 Line Chart
