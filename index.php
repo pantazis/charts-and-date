@@ -19,8 +19,8 @@
     <script src="bower_components/knockout/dist/knockout.js"></script>
     <script src="bower_components/knockout-daterangepicker/dist/daterangepicker.js?<?=rand(1,1000)?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <script type="text/javascript" src="chartdata.js"></script>
-    <script type="text/javascript" src="chartconfig.js"></script>
+    <script type="text/javascript" src="chartdata.js<?=rand(1,1000)?>"></script>
+    <script type="text/javascript" src="chartconfig.js<?=rand(1,1000)?>"></script>
 
     <?php include 'data.php' ?>
 

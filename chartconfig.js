@@ -1,4 +1,4 @@
-const chartConfig ={};
+var chartConfig ={};
 chartConfig.chart1 =  {
     type: 'bar',
     data: localData.chart1,
@@ -83,4 +83,4 @@ chartConfig.chart2= {
     },
     
   };
-  console.log(localData.chart4);
+ 
