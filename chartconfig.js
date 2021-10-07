@@ -1,7 +1,7 @@
 const chartConfig ={};
 chartConfig.chart1 =  {
     type: 'bar',
-    data: data.chart1,
+    data: localData.chart1,
     options: {
       plugins: {
         title: {
@@ -30,7 +30,7 @@ chartConfig.chart1 =  {
 
 chartConfig.chart2= {
     type: 'line',
-    data: data.chart2,
+    data: localData.chart2,
     options: {
       responsive: true,
       plugins: {
@@ -48,7 +48,7 @@ chartConfig.chart2= {
   //----------------------------------------------chart3--------------------------//
   chartConfig.chart3 = {
     type: 'doughnut',
-    data: data.chart3,
+    data: localData.chart3,
     options: {
       responsive: true,
       plugins: {
@@ -66,7 +66,7 @@ chartConfig.chart2= {
 
   chartConfig.chart4 = {
     type: 'line',
-    data: data.chart4 ,
+    data: localData.chart4 ,
     options: {
       plugins: {
         filler: {
@@ -83,4 +83,4 @@ chartConfig.chart2= {
     },
     
   };
-  console.log(data.chart4);
+  console.log(localData.chart4);

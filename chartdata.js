@@ -1,5 +1,5 @@
-var data={};
-data.chart1 ={
+var localData={};
+localData.chart1 ={
     "labels":[
        "January",
        "February",
@@ -819,7 +819,7 @@ data.chart1 ={
 
  //------------------------chart2-----------------------------------------//
 
- data.chart2={
+ localData.chart2={
     "labels":[
        "January",
        "February",
@@ -861,7 +861,7 @@ data.chart1 ={
     ]
  };
  //-----------------------------------chart3---------------------------------////////////////
- data.chart3={
+ localData.chart3={
     "labels":[
        "Red",
        "Orange",
@@ -912,7 +912,7 @@ data.chart1 ={
  }
  //---------------------------------------------chart4-------------------------------
 
- data.chart4 = {
+ localData.chart4 = {
     "labels":[
        "January",
        "February",
