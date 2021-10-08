@@ -34,6 +34,12 @@ var chart3= $('.chart3')[0].getContext('2d');
 var myChart3 = new Chart(chart3,chartConfig.chart3);
 var chart4= $('.chart4')[0].getContext('2d');
 var myChart4 = new Chart(chart4,chartConfig.chart4);
+
+
+
+
+
+
 /*--------------------init chart end ------------------------------------*/
 /*
 Stacked Bar Chart with Groups
@@ -77,9 +83,22 @@ $(".dateButton").daterangepicker({
   $(this).html(start + ' – ' + end );
   getCalendarData(start,end,period)
   getQueriedData();
+  updatecharts();
+
+  
+  
+
+
 
 
 });
+
+function updatecharts(){
+  myChart.update();
+  myChart2.update();
+  myChart3.update();
+  myChart4.update();
+}
 
 
 function getCalendarData(start,end,period){
@@ -124,20 +143,84 @@ var starDateEndOfDay = moment(startDate,"DDMMYYYY").startOf(period);
 var endDateEndOfDay = moment(endDate,"DDMMYYYY").startOf(period);
 
 filteredData = {};
-filteredData.period = period;
-filteredData[starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
+filteredData[period] = {};
+
+filteredData[period][starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
 
 
 while ( starDateEndOfDay.add(1, period+'s').diff(endDateEndOfDay) <= 0 ) {
 
-  filteredData[starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
+  filteredData[period][starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
+
+}
+mergeAndGiveData(period);
+
 
 }
 
+function mergeAndGiveData(period){
+ emptyLocalDataArr();
+ var datanew = filteredData[period];
+ 
+
+ for (const singleData in datanew) {
+   date =  datanew[singleData];
+   
+  for (const chart in  date ) {
+
+    var label=date[chart]["labels"][0]; 
+    var datasets =date[chart]["datasets"];
+    localData[chart]["labels"].push(label);
+
+      $(datasets).each(function(index){
+        var localdataset =localData[chart]["datasets"][index];
+        localdataset["label"]=datasets[index]["label"];      
+        localdataset["data"].push(datasets[index]["data"][0]);
+        
+      })
+      
+      //localData[chart]["datasets"]
+      
+      
+  
+   
+    
+   
+
+   
+    
+    
+
+  }
+     
+      
 }
 
-mergeData();
-console.log(data);
+
+  
+
+}
+
+
+function emptyLocalDataArr(){
+  for (const chart in  localData ) {     
+  localData[chart]["labels"]=[];
+  var datasets =  localData[chart]["datasets"];
+  $(datasets).each(function(index){
+    var localdataset =localData[chart]["datasets"][index];   
+    localdataset["data"]=[];
+
+    
+  })
+  }
+ 
+
+
+}
+
+
+
+
 
 
 
