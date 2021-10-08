@@ -1,18 +1,18 @@
 var localData={};
 localData.chart1 ={
     "labels":[
-       "January",
-       "February",
-       "March",
-       "April",
-       "May",
-       "June",
-       "July",
-       "August",
-       "September",
-       "October",
-       "November",
-       "December"
+     "January",
+     "February",
+     "March",
+     "April",
+     "May",
+     "June",
+     "July",
+     "August",
+     "September",
+     "October",
+     "November",
+     "December"
     ],
     "datasets":[
        {
@@ -974,3 +974,54 @@ localData.chart1 ={
        }
     ]
  }
+ var parsedata = {};
+ function getlabel(){
+   for (const property in  localData) {
+
+      parsedata[property]={};
+      var chart = parsedata[property];
+      var label = localData[property]["labels"][0];
+      
+      chart["labels"] = [];
+      chart["labels"].push(label);
+
+      
+      chart["datasets"] = [];
+      
+      $(localData[property]["datasets"]).each(function(){ 
+         datasetslabelObj ={};       
+         var datasetsLabel = this.label
+         var datasetsData = this.data[0];
+         datasetslabelObj["label"] =datasetsLabel;
+         datasetslabelObj["data"] =[datasetsData];
+         chart["datasets"].push(datasetslabelObj);
+
+         
+      })
+
+      
+    }
+   
+
+
+ } 
+ function mergeData(){
+   for (var period in  data) {
+     var periods =   data[period];
+     for (var date in  periods) {
+        var charts = periods[date];
+        for (var chart in  charts) {
+           
+           charts[chart]=parsedata[chart];
+
+     }
+
+   }
+
+  
+ }
+}
+ 
+ getlabel();
+
+

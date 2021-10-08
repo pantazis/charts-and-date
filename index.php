@@ -19,8 +19,8 @@
     <script src="bower_components/knockout/dist/knockout.js"></script>
     <script src="bower_components/knockout-daterangepicker/dist/daterangepicker.js?<?=rand(1,1000)?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <script type="text/javascript" src="chartdata.js<?=rand(1,1000)?>"></script>
-    <script type="text/javascript" src="chartconfig.js<?=rand(1,1000)?>"></script>
+    <script type="text/javascript" src="chartdata.js?<?=rand(1,1000)?>"></script>
+    <script type="text/javascript" src="chartconfig.js?<?=rand(1,1000)?>"></script>
 
     <?php include 'data.php' ?>
 
@@ -78,6 +78,7 @@ $(".dateButton").daterangepicker({
   getCalendarData(start,end,period)
   getQueriedData();
 
+
 });
 
 
@@ -132,8 +133,14 @@ while ( starDateEndOfDay.add(1, period+'s').diff(endDateEndOfDay) <= 0 ) {
   filteredData[starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
 
 }
-console.log(filteredData);
+
 }
+
+mergeData();
+console.log(data);
+
+
+
 </script>
 
 

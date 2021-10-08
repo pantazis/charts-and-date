@@ -1,10 +1,5 @@
 <script>
-<?php $dateArr =[['startDate'=> '05/01/2021', 'endDate'=> '06/10/2021', 'period'=> 'day'],
-['startDate'=> '25/10/2020', 'endDate'=> '06/10/2021', 'period'=> 'week'],
-['startDate'=> '01/01/2020', 'endDate'=> '31/08/2021', 'period'=> 'month'],
-['startDate'=> '01/01/2020', 'endDate'=> '06/10/2021', 'period'=> 'quarter'],
-['startDate'=> '06/10/2019', 'endDate'=> '06/10/2021', 'period'=> 'year']];
- ?>
+
 
 const data ={
             "day":{
