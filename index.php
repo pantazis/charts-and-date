@@ -105,7 +105,7 @@ function getCalendarData(start,end,period){
   searchDataObj.startDate =start;
   searchDataObj.endDate=end;
   searchDataObj.period=period;
-  console.log(searchDataObj);
+ 
 }
 
 function hackDates(period){
@@ -113,11 +113,11 @@ function hackDates(period){
   switch (period) {
     case "day":
       Obj.startDate =Object.keys(data.day)[0];
-      Obj.endDate = Object.keys(data.day)[3];
+      Obj.endDate = Object.keys(data.day)[2];
     break;
     case "week":
       Obj.startDate = Object.keys(data.week)[0];
-      Obj.endDate = Object.keys(data.week)[3];
+      Obj.endDate = Object.keys(data.week)[1];
     break;
     case "month":
       Obj.startDate = Object.keys(data.month)[0];
@@ -125,7 +125,7 @@ function hackDates(period){
     break;
     case "quarter":
       Obj.startDate = Object.keys(data.quarter)[0];
-      Obj.endDate = Object.keys(data.quarter)[3];
+      Obj.endDate = Object.keys(data.quarter)[2];
     break;
     case "year":
       Obj.startDate = Object.keys(data.year)[0];
@@ -159,16 +159,22 @@ mergeAndGiveData(period);
 }
 
 function mergeAndGiveData(period){
+
  emptyLocalDataArr();
  var datanew = filteredData[period];
  
-
+ 
  for (const singleData in datanew) {
    date =  datanew[singleData];
    
   for (const chart in  date ) {
+   
 
-    var label=date[chart]["labels"][0]; 
+    var label= createLabel(date[chart],singleData,period);
+
+    
+
+
     var datasets =date[chart]["datasets"];
     localData[chart]["labels"].push(label);
 
@@ -214,6 +220,35 @@ function emptyLocalDataArr(){
   })
   }
  
+
+
+}
+
+
+function createLabel(el,date,period){
+
+
+  switch(period) {
+  case "year":
+   return moment(date,"DDMMYYYY").format('YYYY');  
+    break;    
+    case "quarter":
+   var quarter =moment(date,"DDMMYYYY").utc().quarter();   
+   return "Q"+quarter;
+  
+    break;
+    case "month":
+   return moment(date,"DDMMYYYY").format('MMMM');
+  
+    break;
+    case "day":
+   return moment(date,"DDMMYYYY").format("MMM Do");   
+    break;
+  default:
+  return el["labels"][0];
+  
+    // code block
+}
 
 
 }
