@@ -70,10 +70,10 @@ var filteredData;
 $(".dateButton").daterangepicker({
   minDate: moment().subtract(2, 'years')
 }, function (startDate, endDate, period) {
-  startDate = startDate.format(dateFormat);
-  endDate = endDate.format(dateFormat);
+  Obj.startDate = startDate.format(dateFormat);
+  Obj.endDate = endDate.format(dateFormat);
 
-  hackDates(period);
+  setInputval(period);
 
 
 
@@ -102,13 +102,17 @@ function updatecharts(){
 
 
 function getCalendarData(start,end,period){
+  
   searchDataObj.startDate =start;
   searchDataObj.endDate=end;
   searchDataObj.period=period;
+  debugger;
  
 }
 
-function hackDates(period){
+function setInputval(period){
+  console.log(Obj);
+  debugger;
 
   switch (period) {
     case "day":
@@ -128,8 +132,9 @@ function hackDates(period){
       Obj.endDate = Object.keys(data.quarter)[2];
     break;
     case "year":
-      Obj.startDate = Object.keys(data.year)[0];
+      Obj.startDate = Object.keys(data.year)[5];
       Obj.endDate = Object.keys(data.year)[3];
+      console.log(Obj);
     break;
   }
 }
@@ -138,6 +143,7 @@ function getQueriedData(){
  var period = searchDataObj.period;
  var startDate = searchDataObj.startDate;
  var endDate = searchDataObj.endDate;
+ console.log(startDate);
 
 var starDateEndOfDay = moment(startDate,"DDMMYYYY").startOf(period);
 var endDateEndOfDay = moment(endDate,"DDMMYYYY").startOf(period);
