@@ -236,7 +236,7 @@ var localData={
       ],
       "datasets":[
          {
-            "label":"Dataset 1",
+            "label":"sdfdsfd",
             "data":[
                
             ],
@@ -251,7 +251,7 @@ var localData={
             ]
          },
          {
-            "label":"Dataset 1",
+            "label":"vcvcbhv",
             "data":[
                
             ],

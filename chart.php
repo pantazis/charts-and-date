@@ -14,32 +14,31 @@
     justify-content: center;
     align-items: center;
 }
-.resio {
-    width: 50%;
-}
+
+
 
 
 </style> 
 <div class="parent">
 <div class="canvas-c">
-  <div class="resio">
-    <canvas class="chart1" width="400" height="400"></canvas>
-  </div>
+ 
+    <canvas class="chart1"  ></canvas>
+ 
 </div>
 <div class="canvas-c">
-  <div class="resio">
-    <canvas class="chart2" width="400" height="400"></canvas>
-  </div>
+  
+    <canvas class="chart2" ></canvas>
+ 
 </div>
 <div class="canvas-c">
-  <div class="resio">
-    <canvas class="chart3" width="400" height="400"></canvas>
-  </div>
+  
+    <canvas class="chart3" ></canvas>
+ 
 </div>
 <div class="canvas-c">
-  <div class="resio">
-    <canvas class="chart4" width="400" height="400"></canvas>
-  </div>
+  
+    <canvas class="chart4"  ></canvas>
+  
 </div>
 
 

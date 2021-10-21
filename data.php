@@ -34,7 +34,9 @@ i++;
 
 }
 //console.log(data[ppp]); 
-console.log(JSON.stringify(data[ppp])); */
+console.log(JSON.stringify(data[ppp]));
+
+*/
 
 
 

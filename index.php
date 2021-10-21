@@ -68,12 +68,13 @@ var filteredData;
 
 
 $(".dateButton").daterangepicker({
-  minDate: moment().subtract(2, 'years')
+  minDate: moment().subtract(2, 'years'),
+  firstDayOfWeek: 1
 }, function (startDate, endDate, period) {
   Obj.startDate = startDate.format(dateFormat);
   Obj.endDate = endDate.format(dateFormat);
 
-  setInputval(period);
+  //setInputval(period);
 
 
 
@@ -81,7 +82,7 @@ $(".dateButton").daterangepicker({
   var end = Obj.endDate;
 
   $(this).html(start + ' – ' + end );
-  getCalendarData(start,end,period)
+  getCalendarData(start,end,period);
   getQueriedData();
   updatecharts();
 
@@ -106,13 +107,13 @@ function getCalendarData(start,end,period){
   searchDataObj.startDate =start;
   searchDataObj.endDate=end;
   searchDataObj.period=period;
-  debugger;
+  
  
 }
 
 function setInputval(period){
-  console.log(Obj);
-  debugger;
+
+
 
   switch (period) {
     case "day":
@@ -143,20 +144,27 @@ function getQueriedData(){
  var period = searchDataObj.period;
  var startDate = searchDataObj.startDate;
  var endDate = searchDataObj.endDate;
- console.log(startDate);
+ 
 
-var starDateEndOfDay = moment(startDate,"DDMMYYYY").startOf(period);
-var endDateEndOfDay = moment(endDate,"DDMMYYYY").startOf(period);
+
+var starDateEndOfDay = moment(startDate,"DDMMYYYY").endOf(period);
+var endDateEndOfDay = moment(endDate,"DDMMYYYY").endOf(period);
+
+console.log(starDateEndOfDay.format("DD/MM/YYYY"));
+console.log(endDateEndOfDay.format("DD/MM/YYYY"));
+
+
 
 filteredData = {};
 filteredData[period] = {};
 
-filteredData[period][starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
+
+filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
 
 
-while ( starDateEndOfDay.add(1, period+'s').diff(endDateEndOfDay) <= 0 ) {
+while ( starDateEndOfDay.add(1, period+'s').endOf(period).diff(endDateEndOfDay) <= 0 ) {
 
-  filteredData[period][starDateEndOfDay.format(dateFormat)] = data[period][starDateEndOfDay.format(dateFormat)];
+  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
 
 }
 mergeAndGiveData(period);
@@ -240,15 +248,19 @@ function createLabel(el,date,period){
     break;    
     case "quarter":
    var quarter =moment(date,"DDMMYYYY").utc().quarter();   
-   return "Q"+quarter;
+   return "Q"+quarter+" "+moment(date,"DDMMYYYY").format('YYYY');
   
     break;
     case "month":
    return moment(date,"DDMMYYYY").format('MMMM');
   
+    break;  
+    
+      case "week":
+   return moment(date,"DDMMYYYY").format("dddd DD MMM");   
     break;
     case "day":
-   return moment(date,"DDMMYYYY").format("MMM Do");   
+   return moment(date,"DDMMYYYY").format("dd DD MMM");   
     break;
   default:
   return el["labels"][0];
