@@ -142,7 +142,7 @@ function setInputval(period){
     case "year":
       Obj.startDate = Object.keys(data.year)[5];
       Obj.endDate = Object.keys(data.year)[3];
-      console.log(Obj);
+     
     break;
   }
 }
@@ -182,53 +182,91 @@ while ( starDateEndOfDay.add(1, period+'s').endOf(period).diff(endDateEndOfDay) 
 
 }
 
-console.log(filteredData);
+
 mergeAndGiveData(period);
 
 
 
 }
 
-function joinvalues(sumValue){
- 
-  var arrSum = [];
-  for (const singleValue in sumValue) {
 
- 
-   var datasets = sumValue[singleValue]["chart1"]["datasets"];
+function loopAndPush(Value,arrs){
+      for (const singleValue in Value) {
+   var datasets = Value[singleValue]["chart1"]["datasets"];
    $(datasets).each(function(index){
-    if(arrSum.length<datasets.length){
-    arrSum.push(this.data[0]);
+    if(arrs.length<datasets.length){
+    arrs.push(this.data[0]);
     }else{      
-      arrSum[index]=arrSum[index]+this.data[0];
+      arrs[index]=arrs[index]+this.data[0];
     }
-
-
-
-
    });
-   
-
-  
-  
 
 }
+}
+
+function joinvalues(sumValue){
+  var parentArr = [];
+  var arrSum = [];
+  var arrSum2 = [];
+  var arrSum3 = [];
+  
+  
+  loopAndPush(sumValue,arrSum);
+ 
+
 
 if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMYYYY")){
+  
  
-  var yearEndEndOf = moment(Obj.endDate,"DDMMYYYY").endOf('year').format("YYYY");
-  var yearStartEndOf =moment(Obj.startDate,"DDMMYYYY").endOf('year').format("YYYY");
-  if( yearStartEndOf != yearEndEndOf){
+  var yearEndEndOf = moment(Obj.endDate,"DDMMYYYY").endOf('year')
+  var  yearEndOfformat = yearEndEndOf.format("YYYY");
+  var yearStartEndOf =moment(Obj.startDate,"DDMMYYYY").endOf('year')
+  var  yearStartEndOfformat =yearStartEndOf.format("YYYY");
+
+ 
+  
+  
+ 
+  if( yearStartEndOfformat != yearEndOfformat){
+    var Value1 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
+    var Value2 = data["year"][yearEndEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
+    $(Value1).each(function(index){
+    arrSum2.push(this["data"][0]);
+  }); 
+  $(Value2).each(function(index){
+    arrSum3.push(this["data"][0]);
+  });       
+
+  
+
+   
+    
 
 
   }else{
+    var sumValue2 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
+  $(sumValue2).each(function(index){
+    arrSum2.push(this["data"][0]);
+  });    
 
   }
 
-console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
-console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
-return arrSum;
+  
+
+//console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
+//console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
+
+
+
+
+
+
 }
+
+
+parentArr =[arrSum,arrSum2, arrSum3];
+return parentArr;
+
 }
 
 function mergeAndGiveData(period){
@@ -283,8 +321,24 @@ function mergeAndGiveData(period){
    
               
 
-    $(elValuesSort).each(function(){        
-    localData["chart3"]["datasets"][0]["data"].push(this)
+    $(elValuesSort).each(function(index){
+      var valueArr = this;
+      var ArrNum = index;
+      debugger;
+      
+      
+      $(valueArr).each(function(){
+       
+        if(ArrNum==0){
+        //var template = localData["chart3"]["datasets"][0];
+        localData["chart3"]["datasets"][ArrNum]["data"].push(this);
+        }else{
+         
+          //localData["chart3"]["datasets"].push(template)
+          localData["chart3"]["datasets"][ArrNum]["data"].push(this);
+
+        }
+      });
     
     });
     $(".label1 .label2").html("");
