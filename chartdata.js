@@ -236,8 +236,8 @@ var localData={
       ],
       "datasets":[
          {
-            "label":"sdfdsfd",
-            "data":[
+            "label":"date1",
+            "data":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1
                
             ],
             "backgroundColor":[
@@ -251,8 +251,9 @@ var localData={
             ]
          },
          {
-            "label":"vcvcbhv",
+            "label":"date2",
             "data":[
+               1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1
                
             ],
             "backgroundColor":[

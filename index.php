@@ -10,6 +10,8 @@
 <body>
     <button class="dateButton"  data-bind="daterangepicker: dateRange,  daterangepickerOptions: { maxDate: moment() }">Επιλογή Εύρους Ημερομηνιών</button>
     <?php include "chart.php"?>
+    <div class="label1"></div>
+    <div class="label2"></div>
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -34,6 +36,9 @@ var chart3= $('.chart3')[0].getContext('2d');
 var myChart3 = new Chart(chart3,chartConfig.chart3);
 var chart4= $('.chart4')[0].getContext('2d');
 var myChart4 = new Chart(chart4,chartConfig.chart4);
+
+
+
 
 
 
@@ -74,14 +79,14 @@ $(".dateButton").daterangepicker({
   Obj.startDate = startDate.format(dateFormat);
   Obj.endDate = endDate.format(dateFormat);
 
-  //setInputval(period);
+  setInputval(period);
 
 
 
   var start =Obj.startDate;
   var end = Obj.endDate;
 
-  $(this).html(start + ' – ' + end );
+  $(this).html(start + ' – ' + end ); 
   getCalendarData(start,end,period);
   getQueriedData();
   updatecharts();
@@ -140,6 +145,20 @@ function setInputval(period){
   }
 }
 
+function gefilteredDatat(period,starDateEndOfDay,endDateEndOfDay){
+
+  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
+
+
+while ( starDateEndOfDay.add(1, period+'s').endOf(period).diff(endDateEndOfDay) <= 0 ) {
+
+  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
+
+}
+
+}
+
+
 function getQueriedData(){
  var period = searchDataObj.period;
  var startDate = searchDataObj.startDate;
@@ -156,32 +175,62 @@ console.log(endDateEndOfDay.format("DD/MM/YYYY"));
 
 
 filteredData = {};
+
 filteredData[period] = {};
 
+gefilteredDatat(period,starDateEndOfDay,endDateEndOfDay)
 
-filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
+gefilteredDatat("year")
 
 
-while ( starDateEndOfDay.add(1, period+'s').endOf(period).diff(endDateEndOfDay) <= 0 ) {
 
-  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
 
-}
+
+console.log(filteredData);
 mergeAndGiveData(period);
 
 
+
+}
+
+function joinvalues(sumValue){
+ 
+  var arrSum = [];
+  for (const singleValue in sumValue) {
+
+ 
+   var datasets = sumValue[singleValue]["chart1"]["datasets"];
+   $(datasets).each(function(index){
+    if(arrSum.length<datasets.length){
+    arrSum.push(this.data[0]);
+    }else{      
+      arrSum[index]=arrSum[index]+this.data[0];
+    }
+
+   });
+
+}
+return arrSum;
 }
 
 function mergeAndGiveData(period){
+ 
+  
 
  emptyLocalDataArr();
  var datanew = filteredData[period];
+
+ var elValuesSort =  joinvalues(datanew);
+ var elValuesLong =  joinvalues(datanew);
  
- 
+ var i = 0;
  for (const singleData in datanew) {
+   
    date =  datanew[singleData];
    
   for (const chart in  date ) {
+
+   if(chart!='chart3'){  
    
 
     var label= createLabel(date[chart],singleData,period);
@@ -198,6 +247,45 @@ function mergeAndGiveData(period){
         localdataset["data"].push(datasets[index]["data"][0]);
         
       })
+
+    };   
+    if(chart=='chart3' ){
+
+      if(i==0){
+      var obj = {};
+      $(date["chart1"].datasets).each(function(){
+        
+      obj[this.label]=this.label;
+
+      })
+
+      for (const label in obj) {      
+      localData["chart3"]["labels"].push(label)
+    }
+   
+              
+    $(elValuesSort).each(function(){        
+    //localData["chart3"]["datasets"][1]["data"].push(this)
+    
+    });
+    $(elValuesLong).each(function(){        
+    localData["chart3"]["datasets"][0]["data"].push(this)
+    
+    });
+    $(".label1 .label2").html("");
+    $(".label1").html(localData["chart3"]["datasets"][0]["label"])
+    $(".label2").html(localData["chart3"]["datasets"][1]["label"])
+
+   
+
+    
+  }
+
+
+    }
+
+   
+    
       
       //localData[chart]["datasets"]
       
@@ -213,7 +301,7 @@ function mergeAndGiveData(period){
 
   }
      
-      
+i++;    
 }
 
 
