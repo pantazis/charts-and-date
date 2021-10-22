@@ -53,6 +53,26 @@ Doughnut
 Line Chart Boundaries
 */
 /*get data form daterangepicker*/
+
+
+var template =  {
+            "label":"date1",
+            "data":[
+               
+            ],
+            "backgroundColor":[
+               "rgb(255, 99, 132)",
+               "rgb(255, 159, 64)",
+               "rgb(255, 205, 86)",
+               "rgb(75, 192, 192)",
+               "rgb(54, 162, 235)",
+               "rgb(153, 102, 255)",
+               "rgb(201, 203, 207)"
+            ]
+         };
+
+
+
 var dateFormat ="DD/MM/YYYY";
 var Obj  ={
   startDate:"",
@@ -68,6 +88,7 @@ const tableConfig = {
 
 }
 
+
 //data after selection
 var filteredData;
 
@@ -81,6 +102,8 @@ $(".dateButton").daterangepicker({
 
   
 
+
+     
   //setInputval(period);
 
 
@@ -320,26 +343,35 @@ function mergeAndGiveData(period){
     }
    
               
-
-    $(elValuesSort).each(function(index){
-      var valueArr = this;
-      var ArrNum = index;
-      debugger;
-      
-      
-      $(valueArr).each(function(){
-       
-        if(ArrNum==0){
-        //var template = localData["chart3"]["datasets"][0];
-        localData["chart3"]["datasets"][ArrNum]["data"].push(this);
-        }else{
-         
-          //localData["chart3"]["datasets"].push(template)
-          localData["chart3"]["datasets"][ArrNum]["data"].push(this);
-
-        }
-      });
     
+    
+    localData["chart3"]["datasets"] = [];
+
+    debugger;
+    
+    $(elValuesSort).each(function(index){
+     
+     
+      var valueArr = this;
+      if(valueArr.length!=0){
+     
+      
+      var ArrNum = index; 
+            
+        localData["chart3"]["datasets"].push(Object.assign({}, template))
+        
+       
+      
+     
+  
+      localData["chart3"]["datasets"][ArrNum]["label"]="asas"+ ArrNum;
+      $(valueArr).each(function(){      
+   
+      
+        localData["chart3"]["datasets"][ArrNum]["data"].push(this);   
+        
+      });
+      }
     });
     $(".label1 .label2").html("");
     $(".label1").html(localData["chart3"]["datasets"][0]["label"])
