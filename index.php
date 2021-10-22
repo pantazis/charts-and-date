@@ -145,16 +145,7 @@ function setInputval(period){
   }
 }
 
-function gefilteredDatat(period,starDateEndOfDay,endDateEndOfDay){
-
-  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
-
-
-while ( starDateEndOfDay.add(1, period+'s').endOf(period).diff(endDateEndOfDay) <= 0 ) {
-
-  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
-
-}
+function gefilteredDatat(){
 
 }
 
@@ -178,13 +169,16 @@ filteredData = {};
 
 filteredData[period] = {};
 
-gefilteredDatat(period,starDateEndOfDay,endDateEndOfDay)
-
-gefilteredDatat("year")
 
 
+filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
 
 
+while ( starDateEndOfDay.add(1, period+'s').endOf(period).diff(endDateEndOfDay) <= 0 ) {
+
+  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] = data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
+
+}
 
 console.log(filteredData);
 mergeAndGiveData(period);
