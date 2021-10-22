@@ -79,7 +79,9 @@ $(".dateButton").daterangepicker({
   Obj.startDate = startDate.format(dateFormat);
   Obj.endDate = endDate.format(dateFormat);
 
-  setInputval(period);
+  
+
+  //setInputval(period);
 
 
 
@@ -160,8 +162,8 @@ function getQueriedData(){
 var starDateEndOfDay = moment(startDate,"DDMMYYYY").endOf(period);
 var endDateEndOfDay = moment(endDate,"DDMMYYYY").endOf(period);
 
-console.log(starDateEndOfDay.format("DD/MM/YYYY"));
-console.log(endDateEndOfDay.format("DD/MM/YYYY"));
+//console.log(starDateEndOfDay.format("DD/MM/YYYY"));
+//console.log(endDateEndOfDay.format("DD/MM/YYYY"));
 
 
 
@@ -201,10 +203,32 @@ function joinvalues(sumValue){
       arrSum[index]=arrSum[index]+this.data[0];
     }
 
+
+
+
    });
+   
+
+  
+  
 
 }
+
+if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMYYYY")){
+ 
+  var yearEndEndOf = moment(Obj.endDate,"DDMMYYYY").endOf('year').format("YYYY");
+  var yearStartEndOf =moment(Obj.startDate,"DDMMYYYY").endOf('year').format("YYYY");
+  if( yearStartEndOf != yearEndEndOf){
+
+
+  }else{
+
+  }
+
+console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
+console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
 return arrSum;
+}
 }
 
 function mergeAndGiveData(period){
@@ -215,7 +239,7 @@ function mergeAndGiveData(period){
  var datanew = filteredData[period];
 
  var elValuesSort =  joinvalues(datanew);
- var elValuesLong =  joinvalues(datanew);
+ 
  
  var i = 0;
  for (const singleData in datanew) {
@@ -258,11 +282,8 @@ function mergeAndGiveData(period){
     }
    
               
+
     $(elValuesSort).each(function(){        
-    //localData["chart3"]["datasets"][1]["data"].push(this)
-    
-    });
-    $(elValuesLong).each(function(){        
     localData["chart3"]["datasets"][0]["data"].push(this)
     
     });
