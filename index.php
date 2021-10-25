@@ -229,6 +229,7 @@ function loopAndPush(Value,arrs){
 }
 
 function joinvalues(sumValue){
+  console.log(0);
 
   
   var parentArr = [];
@@ -246,6 +247,7 @@ function joinvalues(sumValue){
 
 
 if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMYYYY")){
+  console.log(1);
   
   
  
@@ -259,18 +261,23 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
   
  
   if( yearStartEndOfformat != yearEndOfformat){
+    console.log(2);
     var Value1 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
     var Value2 = data["year"][yearEndEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
 
     $(Value1).each(function(index){    
     arrSum2.push(this["data"][0]);
   }); 
+  parentDatesChart3.push(yearStartEndOfformat);
   
 
 
   $(Value2).each(function(index){
     arrSum3.push(this["data"][0]);
   }); 
+
+  parentDatesChart3.push(yearEndOfformat);
+
      
 
   
@@ -280,27 +287,22 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
 
 
   }else{
+    
     var sumValue2 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
   $(sumValue2).each(function(index){
     arrSum2.push(this["data"][0]);
   });
+
+  parentDatesChart3.push(yearStartEndOfformat);
      
 
   }
-
-  
-
 //console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
 //console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
-
-
-
-
-
-
 }
 
-parentDatesChart3=[yearStartEndOfformat,yearEndOfformat,moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY")+"-"+moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY")];
+
+parentDatesChart3.push(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY")+" - "+moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
 parentArr =[arrSum,arrSum2, arrSum3];
 
 
