@@ -135,12 +135,16 @@ $(".dateButton").daterangepicker({
 
   $(this).html(start + ' – ' + end );
   hasNoData = false;
-  getCalendarData(start,end,period);
-  getQueriedData();
-  if(hasNoData==true){
-    return;
-  }
+  getCalendarData(start,end,period); 
+ 
   updatecharts();
+  getQueriedData();
+  if(hasNoData){
+  nodata();
+  
+  }
+  console.log(1);
+  
 
 });
 
@@ -227,6 +231,9 @@ while ( starDateEndOfDay.add(1, period+'s').endOf(period).diff(endDateEndOfDay) 
 
 
 mergeAndGiveData(period);
+if(hasNoData){
+    return;
+  }
 
 
 
@@ -237,12 +244,13 @@ function loopAndPush(Value,arrs){
       for (const singleValue in Value) {  
         
         if( Value[singleValue] == undefined ){          
-          nodata([singleValue]["chart1"]);
+         
                 
           hasNoData = true;
           return;
          
         }
+        
 
        
        
@@ -265,8 +273,13 @@ function nodata(data){
 
  var charts =[myChart,myChart2,myChart3,myChart4];
 
+
   $(charts).each(function(){
       var Chart = this;
+      
+     
+      
+     
   
         // No data is present
       var ctx = Chart.ctx;
@@ -279,14 +292,16 @@ function nodata(data){
       ctx.textBaseline = 'middle';
       ctx.font = "16px normal 'Helvetica Nueue'";
       ctx.fillText('No data to display', width / 2, height / 2);
-      ctx.restore();
+
+    
 
   });
+ 
   
 }
 
 function joinvalues(sumValue){
-  console.log(0);
+  
 
 
   var parentArr = [];
@@ -368,6 +383,10 @@ return parentArr;
 }
 
 function mergeAndGiveData(period){
+ 
+  
+
+
 
 
 
@@ -375,6 +394,9 @@ function mergeAndGiveData(period){
  var datanew = filteredData[period];
 
  var elValuesSort =  joinvalues(datanew);
+ if(hasNoData==true){
+    return;
+  }
 
 
  var i = 0;
