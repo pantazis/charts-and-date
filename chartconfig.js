@@ -61,9 +61,10 @@ chartConfig.chart2= {
           label: function(context) {
             console.log(context);
               var label = context.label || '';
+              
 
-              if (label) {               
-                
+              if (label) {
+                  label = " "+context.dataset.label+" "+label;             
                   label += ': '+ context.parsed.toFixed(2).replace(".",",");
               }
             

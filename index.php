@@ -91,6 +91,7 @@ const tableConfig = {
 
 //data after selection
 var filteredData;
+var parentDatesChart3=[];  
 
 
 $(".dateButton").daterangepicker({
@@ -228,7 +229,8 @@ function loopAndPush(Value,arrs){
 }
 
 function joinvalues(sumValue){
-  console.log(1)
+
+  
   var parentArr = [];
   var arrSum = [];
   var arrSum2 = [];
@@ -245,6 +247,7 @@ function joinvalues(sumValue){
 
 if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMYYYY")){
   
+  
  
   var yearEndEndOf = moment(Obj.endDate,"DDMMYYYY").endOf('year')
   var  yearEndOfformat = yearEndEndOf.format("YYYY");
@@ -258,13 +261,17 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
   if( yearStartEndOfformat != yearEndOfformat){
     var Value1 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
     var Value2 = data["year"][yearEndEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
-    $(Value1).each(function(index){
-    
+
+    $(Value1).each(function(index){    
     arrSum2.push(this["data"][0]);
   }); 
+  
+
+
   $(Value2).each(function(index){
     arrSum3.push(this["data"][0]);
-  });       
+  }); 
+     
 
   
 
@@ -276,7 +283,8 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
     var sumValue2 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
   $(sumValue2).each(function(index){
     arrSum2.push(this["data"][0]);
-  });    
+  });
+     
 
   }
 
@@ -292,9 +300,10 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
 
 }
 
-
+parentDatesChart3=[yearStartEndOfformat,yearEndOfformat,moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY")+"-"+moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY")];
 parentArr =[arrSum,arrSum2, arrSum3];
-debugger;
+
+
 return parentArr;
 
 }
@@ -358,24 +367,31 @@ function mergeAndGiveData(period){
     
     
     $(elValuesSort).each(function(index){
+
      
-     
+     var timeperiod = parentDatesChart3;
+
       var valueArr = this;
       if(valueArr.length!=0){
      
       
       var ArrNum = index; 
-            
-        localData["chart3"]["datasets"].push(JSON.parse(JSON.stringify(template)));
+    
+        var newdata = JSON.parse(JSON.stringify(template));
+        newdata.label = timeperiod[ArrNum];
+        localData["chart3"]["datasets"].push(newdata);
+       
+        
         
     
         
        
       
      
-  
+       
       //localData["chart3"]["datasets"][ArrNum]["label"]="asas"+ ArrNum;
-      $(valueArr).each(function(){      
+      $(valueArr).each(function(){ 
+         
    
       
         localData["chart3"]["datasets"][ArrNum]["data"].push(this);   
@@ -383,9 +399,7 @@ function mergeAndGiveData(period){
       });
       }
     });
-    $(".label1 .label2").html("");
-    $(".label1").html(localData["chart3"]["datasets"][0]["label"])
-    $(".label2").html(localData["chart3"]["datasets"][1]["label"])
+
 
    
 
