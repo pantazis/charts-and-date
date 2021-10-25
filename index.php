@@ -112,7 +112,7 @@ $(".dateButton").daterangepicker({
   var end = Obj.endDate;
 
   $(this).html(start + ' – ' + end ); 
-  getCalendarData(start,end,period);
+  getCalendarData(start,end,period);  
   getQueriedData();
   updatecharts();
 
@@ -228,6 +228,7 @@ function loopAndPush(Value,arrs){
 }
 
 function joinvalues(sumValue){
+  console.log(1)
   var parentArr = [];
   var arrSum = [];
   var arrSum2 = [];
@@ -236,6 +237,10 @@ function joinvalues(sumValue){
   
   loopAndPush(sumValue,arrSum);
  
+
+
+
+
 
 
 if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMYYYY")){
@@ -254,6 +259,7 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
     var Value1 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
     var Value2 = data["year"][yearEndEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
     $(Value1).each(function(index){
+    
     arrSum2.push(this["data"][0]);
   }); 
   $(Value2).each(function(index){
@@ -288,6 +294,7 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
 
 
 parentArr =[arrSum,arrSum2, arrSum3];
+debugger;
 return parentArr;
 
 }
@@ -334,6 +341,7 @@ function mergeAndGiveData(period){
       var obj = {};
       $(date["chart1"].datasets).each(function(){
         
+        
       obj[this.label]=this.label;
 
       })
@@ -347,7 +355,7 @@ function mergeAndGiveData(period){
     
     localData["chart3"]["datasets"] = [];
 
-    debugger;
+    
     
     $(elValuesSort).each(function(index){
      
@@ -358,13 +366,15 @@ function mergeAndGiveData(period){
       
       var ArrNum = index; 
             
-        localData["chart3"]["datasets"].push(Object.assign({}, template))
+        localData["chart3"]["datasets"].push(JSON.parse(JSON.stringify(template)));
+        
+    
         
        
       
      
   
-      localData["chart3"]["datasets"][ArrNum]["label"]="asas"+ ArrNum;
+      //localData["chart3"]["datasets"][ArrNum]["label"]="asas"+ ArrNum;
       $(valueArr).each(function(){      
    
       

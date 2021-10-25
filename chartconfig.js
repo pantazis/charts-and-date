@@ -49,12 +49,28 @@ chartConfig.chart2= {
   chartConfig.chart3 = {
     type: 'doughnut',
     data: localData.chart3,
-    options: {
+    options: {  
       responsive: true,
       plugins: {
         legend: {
           position: 'top',
+
         },
+        tooltip: {
+        callbacks: {
+          label: function(context) {
+            console.log(context);
+              var label = context.label || '';
+
+              if (label) {               
+                
+                  label += ': '+ context.parsed.toFixed(2).replace(".",",");
+              }
+            
+              return label;
+          }
+        }
+      },
         title: {
           display: true,
           text: 'Chart.js Doughnut Chart'
