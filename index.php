@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="bower_components\knockout-daterangepicker\dist\daterangepicker.css">
 </head>
 <body>
-    <button class="dateButton"  data-bind="daterangepicker: dateRange,  daterangepickerOptions: { maxDate: moment() }">Επιλογή Εύρους Ημερομηνιών</button>
+    <button class="dateButton"  data-bind="daterangepicker: dateRange,  daterangepickerOptions: { maxDate: moment()},{startDate: '01/10/2019'},{endDate: new Date()}">Επιλογή Εύρους Ημερομηνιών</button>
     <?php include "chart.php"?>
     <div class="label1"></div>
     <div class="label2"></div>
@@ -58,7 +58,7 @@ Line Chart Boundaries
 var template =  {
             "label":"date1",
             "data":[
-               
+
             ],
             "backgroundColor":[
                "rgb(255, 99, 132)",
@@ -91,20 +91,20 @@ const tableConfig = {
 
 //data after selection
 var filteredData;
-var parentDatesChart3=[];  
+var parentDatesChart3=[];
 
 
 $(".dateButton").daterangepicker({
-  minDate: moment().subtract(2, 'years'),
+  minDate: moment(Object.keys(data.day)[0],"DDMMYYYY"),
   firstDayOfWeek: 1
 }, function (startDate, endDate, period) {
   Obj.startDate = startDate.format(dateFormat);
   Obj.endDate = endDate.format(dateFormat);
 
-  
 
 
-     
+
+
   //setInputval(period);
 
 
@@ -112,13 +112,13 @@ $(".dateButton").daterangepicker({
   var start =Obj.startDate;
   var end = Obj.endDate;
 
-  $(this).html(start + ' – ' + end ); 
-  getCalendarData(start,end,period);  
+  $(this).html(start + ' – ' + end );
+  getCalendarData(start,end,period);
   getQueriedData();
   updatecharts();
 
-  
-  
+
+
 
 
 
@@ -134,12 +134,12 @@ function updatecharts(){
 
 
 function getCalendarData(start,end,period){
-  
+
   searchDataObj.startDate =start;
   searchDataObj.endDate=end;
   searchDataObj.period=period;
-  
- 
+
+
 }
 
 function setInputval(period){
@@ -166,7 +166,7 @@ function setInputval(period){
     case "year":
       Obj.startDate = Object.keys(data.year)[5];
       Obj.endDate = Object.keys(data.year)[3];
-     
+
     break;
   }
 }
@@ -180,7 +180,7 @@ function getQueriedData(){
  var period = searchDataObj.period;
  var startDate = searchDataObj.startDate;
  var endDate = searchDataObj.endDate;
- 
+
 
 
 var starDateEndOfDay = moment(startDate,"DDMMYYYY").endOf(period);
@@ -220,7 +220,7 @@ function loopAndPush(Value,arrs){
    $(datasets).each(function(index){
     if(arrs.length<datasets.length){
     arrs.push(this.data[0]);
-    }else{      
+    }else{
       arrs[index]=arrs[index]+this.data[0];
     }
    });
@@ -231,15 +231,15 @@ function loopAndPush(Value,arrs){
 function joinvalues(sumValue){
   console.log(0);
 
-  
+
   var parentArr = [];
   var arrSum = [];
   var arrSum2 = [];
   var arrSum3 = [];
-  
-  
+
+
   loopAndPush(sumValue,arrSum);
- 
+
 
 
 
@@ -256,16 +256,16 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
   var yearStartEndOf =moment(Obj.startDate,"DDMMYYYY").endOf('year')
   var  yearStartEndOfformat =yearStartEndOf.format("YYYY");
 
- 
-  
-  
- 
+
+
+
+
   if( yearStartEndOfformat != yearEndOfformat){
     console.log(2);
     var Value1 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
     var Value2 = data["year"][yearEndEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
 
-    $(Value1).each(function(index){    
+    $(Value1).each(function(index){
     arrSum2.push(this["data"][0]);
   }); 
   parentDatesChart3.push(yearStartEndOfformat);
@@ -280,10 +280,7 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
 
      
 
-  
 
-   
-    
 
 
   }else{
@@ -311,28 +308,28 @@ return parentArr;
 }
 
 function mergeAndGiveData(period){
- 
-  
+
+
 
  emptyLocalDataArr();
  var datanew = filteredData[period];
 
  var elValuesSort =  joinvalues(datanew);
- 
- 
+
+
  var i = 0;
  for (const singleData in datanew) {
-   
+
    date =  datanew[singleData];
-   
+
   for (const chart in  date ) {
 
-   if(chart!='chart3'){  
-   
+   if(chart!='chart3'){
+
 
     var label= createLabel(date[chart],singleData,period);
 
-    
+
 
 
     var datasets =date[chart]["datasets"];
@@ -340,115 +337,115 @@ function mergeAndGiveData(period){
 
       $(datasets).each(function(index){
         var localdataset =localData[chart]["datasets"][index];
-        localdataset["label"]=datasets[index]["label"];      
+        localdataset["label"]=datasets[index]["label"];
         localdataset["data"].push(datasets[index]["data"][0]);
-        
+
       })
 
-    };   
+    };
     if(chart=='chart3' ){
 
       if(i==0){
       var obj = {};
       $(date["chart1"].datasets).each(function(){
-        
-        
+
+
       obj[this.label]=this.label;
 
       })
 
-      for (const label in obj) {      
+      for (const label in obj) {
       localData["chart3"]["labels"].push(label)
     }
-   
-              
-    
-    
+
+
+
+
     localData["chart3"]["datasets"] = [];
 
-    
-    
+
+
     $(elValuesSort).each(function(index){
 
-     
+
      var timeperiod = parentDatesChart3;
 
       var valueArr = this;
       if(valueArr.length!=0){
-     
-      
-      var ArrNum = index; 
-    
+
+
+      var ArrNum = index;
+
         var newdata = JSON.parse(JSON.stringify(template));
         newdata.label = timeperiod[ArrNum];
         localData["chart3"]["datasets"].push(newdata);
-       
-        
-        
-    
-        
-       
-      
-     
-       
+
+
+
+
+
+
+
+
+
       //localData["chart3"]["datasets"][ArrNum]["label"]="asas"+ ArrNum;
-      $(valueArr).each(function(){ 
-         
-   
-      
-        localData["chart3"]["datasets"][ArrNum]["data"].push(this);   
-        
+      $(valueArr).each(function(){
+
+
+
+        localData["chart3"]["datasets"][ArrNum]["data"].push(this);
+
       });
       }
     });
 
 
-   
 
-    
+
+
   }
 
 
     }
 
-   
-    
-      
-      //localData[chart]["datasets"]
-      
-      
-  
-   
-    
-   
 
-   
-    
-    
+
+
+      //localData[chart]["datasets"]
+
+
+
+
+
+
+
+
+
+
 
   }
-     
-i++;    
+
+i++;
 }
 
 
-  
+
 
 }
 
 
 function emptyLocalDataArr(){
-  for (const chart in  localData ) {     
+  for (const chart in  localData ) {
   localData[chart]["labels"]=[];
   var datasets =  localData[chart]["datasets"];
   $(datasets).each(function(index){
-    var localdataset =localData[chart]["datasets"][index];   
+    var localdataset =localData[chart]["datasets"][index];
     localdataset["data"]=[];
 
-    
+
   })
   }
- 
+
 
 
 }
@@ -459,27 +456,27 @@ function createLabel(el,date,period){
 
   switch(period) {
   case "year":
-   return moment(date,"DDMMYYYY").format('YYYY');  
-    break;    
+   return moment(date,"DDMMYYYY").format('YYYY');
+    break;
     case "quarter":
-   var quarter =moment(date,"DDMMYYYY").utc().quarter();   
+   var quarter =moment(date,"DDMMYYYY").utc().quarter();
    return "Q"+quarter+" "+moment(date,"DDMMYYYY").format('YYYY');
-  
+
     break;
     case "month":
    return moment(date,"DDMMYYYY").format('MMMM');
-  
-    break;  
-    
+
+    break;
+
       case "week":
-   return moment(date,"DDMMYYYY").format("dddd DD MMM");   
+   return moment(date,"DDMMYYYY").format("dddd DD MMM");
     break;
     case "day":
-   return moment(date,"DDMMYYYY").format("dd DD MMM");   
+   return moment(date,"DDMMYYYY").format("dd DD MMM");
     break;
   default:
   return el["labels"][0];
-  
+
     // code block
 }
 
