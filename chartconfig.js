@@ -45,36 +45,36 @@ chartConfig.chart2 = {
 
 //----------------------------------------------chart3--------------------------//
 chartConfig.chart3 = {
-	type: "doughnut",
-	data: localData.chart3,
-	options: {
-		responsive: true,
-		plugins: {
-			legend: {
-				position: "top",
-			},
-			tooltip: {
-				callbacks: {
-					label: function (context) {
-						// console.log(context);
-						var label = context.label || "";
-
-						if (label) {
-							label = " " + context.dataset.label + " " + label;
-							label += ": " + context.parsed.toFixed(2).replace(".", ",");
-						}
-
-						return label;
-					},
-				},
-			},
-			title: {
-				display: true,
-				text: "Chart.js Doughnut Chart",
-			},
-		},
-	},
-};
+    type: 'doughnut',
+    data: localData.chart3,
+    options: {  
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        tooltip: {
+        callbacks: {
+         label: function(context) {
+              var label = context.label || '';
+              if (label) {
+                  label += ': '+ context.parsed.toFixed(2).replace(".",",");
+              }
+              return label;
+          },
+          beforeTitle: function (context) {
+            var label = context[0].dataset.label;
+            return label;
+          }
+        }
+      },
+        title: {
+          display: true,
+          text: 'Chart.js Doughnut Chart'
+        }
+      }
+    },
+  };
 //----------------------------------chart4-----------------------------------------------
 
 chartConfig.chart4 = {

@@ -483,6 +483,32 @@ function createLabel(el,date,period){
 
 }
 
+period = data.year;
+for(var date in period){
+  charts = period[date];
+  for(var  chart in  charts){
+    var chart=  charts[chart]; 
+    datasets =  chart.datasets;
+    $(datasets).each(function(){
+      this.data=[];
+      var data = this.data;
+      data.push(Math.random()*1000);
+    });
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
