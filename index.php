@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="bower_components\knockout-daterangepicker\dist\daterangepicker.css">
 </head>
 <body>
-    <button class="dateButton"  data-bind="daterangepicker: dateRange,  daterangepickerOptions: { maxDate: moment()},{startDate: '01/10/2019'},{endDate: new Date()}">Επιλογή Εύρους Ημερομηνιών</button>
+<style>
+  .dateButton{
+  line-height: 12px;
+  width: 239px;
+  font-size: 11pt;
+  font-family: 'Roboto';
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  height: 41px;
+  border-radius: 10px;
+}
+
+.daterangepicker .custom-range-buttons button.apply-btn {
+  width: 70%;
+}
+</style>
+    <button class="dateButton"  data-bind="daterangepicker: dateRange'">Επιλογή Εύρους Ημερομηνιών</button>
     <?php include "chart.php"?>
     <div class="label1"></div>
     <div class="label2"></div>
@@ -97,8 +116,9 @@ var hasNoData;
 
 $(".dateButton").daterangepicker({
   minDate: moment(Object.keys(data.day)[0],"DDMMYYYY"),
-  firstDayOfWeek: 1
-}, function (startDate, endDate, period) {
+  firstDayOfWeek: 1,
+  orientation: 'left'
+  }, function (startDate, endDate, period) {
   Obj.startDate = startDate.format(dateFormat);
   Obj.endDate = endDate.format(dateFormat);
 
@@ -288,9 +308,9 @@ function joinvalues(sumValue){
 
 if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMYYYY")){
   console.log(1);
-  
-  
- 
+
+
+
   var yearEndEndOf = moment(Obj.endDate,"DDMMYYYY").endOf('year')
   var  yearEndOfformat = yearEndEndOf.format("YYYY");
   var yearStartEndOf =moment(Obj.startDate,"DDMMYYYY").endOf('year')
@@ -307,31 +327,31 @@ if( moment(Obj.startDate,"DDMMYYYY").add(1, 'years') > moment(Obj.endDate,"DDMMY
 
     $(Value1).each(function(index){
     arrSum2.push(this["data"][0]);
-  }); 
+  });
   parentDatesChart3.push(yearStartEndOfformat);
-  
+
 
 
   $(Value2).each(function(index){
     arrSum3.push(this["data"][0]);
-  }); 
+  });
 
   parentDatesChart3.push(yearEndOfformat);
 
-     
+
 
 
 
 
   }else{
-    
+
     var sumValue2 = data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
   $(sumValue2).each(function(index){
     arrSum2.push(this["data"][0]);
   });
 
   parentDatesChart3.push(yearStartEndOfformat);
-     
+
 
   }
 //console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
@@ -527,7 +547,7 @@ period = data.year;
 for(var date in period){
   charts = period[date];
   for(var  chart in  charts){
-    var chart=  charts[chart]; 
+    var chart=  charts[chart];
     datasets =  chart.datasets;
     $(datasets).each(function(){
       this.data=[];
