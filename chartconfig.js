@@ -58,17 +58,21 @@ chartConfig.chart2= {
         },
         tooltip: {
         callbacks: {
-          label: function(context) {
-            console.log(context);
+         label: function(context) {
+            
               var label = context.label || '';
               
 
               if (label) {
-                  label = " "+context.dataset.label+" "+label;             
+                           
                   label += ': '+ context.parsed.toFixed(2).replace(".",",");
               }
             
               return label;
+          },
+          beforeTitle: function (context) {
+            var label = context[0].dataset.label;
+            return label;
           }
         }
       },
