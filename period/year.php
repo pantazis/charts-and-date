@@ -8,157 +8,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -171,13 +171,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -190,13 +190,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -209,19 +209,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -236,157 +236,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -399,13 +399,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -418,13 +418,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -437,19 +437,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -464,157 +464,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -627,13 +627,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -646,13 +646,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -665,19 +665,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -692,157 +692,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -855,13 +855,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -874,13 +874,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -893,19 +893,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -920,157 +920,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1083,13 +1083,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1102,13 +1102,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1121,19 +1121,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1148,157 +1148,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1311,13 +1311,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1330,13 +1330,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1349,19 +1349,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1376,157 +1376,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1539,13 +1539,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1558,13 +1558,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1577,19 +1577,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1604,157 +1604,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1767,13 +1767,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1786,13 +1786,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1805,19 +1805,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1832,157 +1832,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -1995,13 +1995,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2014,13 +2014,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2033,19 +2033,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2060,157 +2060,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2223,13 +2223,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2242,13 +2242,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2261,19 +2261,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2288,157 +2288,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2451,13 +2451,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2470,13 +2470,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2489,19 +2489,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2516,157 +2516,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2679,13 +2679,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2698,13 +2698,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2717,19 +2717,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2744,157 +2744,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2907,13 +2907,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2926,13 +2926,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2945,19 +2945,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -2972,157 +2972,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3135,13 +3135,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3154,13 +3154,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3173,19 +3173,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3200,157 +3200,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3363,13 +3363,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3382,13 +3382,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3401,19 +3401,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3428,157 +3428,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3591,13 +3591,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3610,13 +3610,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3629,19 +3629,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3656,157 +3656,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3819,13 +3819,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3838,13 +3838,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3857,19 +3857,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -3884,157 +3884,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4047,13 +4047,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4066,13 +4066,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4085,19 +4085,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4112,157 +4112,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4275,13 +4275,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4294,13 +4294,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4313,19 +4313,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4340,157 +4340,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4503,13 +4503,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4522,13 +4522,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4541,19 +4541,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4568,157 +4568,157 @@ data.year = {
             {
                "label":"Grow",
                "data":[
-                  14.37928669
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Expand",
                "data":[
-                  56.49862826
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Scale",
                "data":[
-                  17.13648834
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Genesis",
                "data":[
-                  62.95953361
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Designer",
                "data":[
-                  60.63443073
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Entrepreneur",
                "data":[
-                  76.82784636
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Motor",
                "data":[
-                  78.20644719
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Turbo",
                "data":[
-                  31.43689986
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Jet",
                "data":[
-                  3.18587106
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Rocket",
                "data":[
-                  60.12002743
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Bronze",
                "data":[
-                  68.90603567
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Silver",
                "data":[
-                  96.21056241
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Gold",
                "data":[
-                  8.70027435
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Platinum",
                "data":[
-                  73.04183813
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D1 NVME",
                "data":[
-                  55.90192044
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - f3 HDD",
                "data":[
-                  23.94718793
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 NVME",
                "data":[
-                  43.84430727
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D3 HDD",
                "data":[
-                  82.25994513
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F3 NVME",
                "data":[
-                  5.86076818
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - F4 NVME",
                "data":[
-                  81.31344307
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 HDD",
                "data":[
-                  75.28463649
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Starter Unit - D4 NVME",
                "data":[
-                  54.44101509
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  85.44924554
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  34.97599451
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 HDD",
                "data":[
-                  69.68792867
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Core Branded -1 NVMe",
                "data":[
-                  56.25171468
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4731,13 +4731,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  -97.92866941
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 2",
                "data":[
-                  2.8755144
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4750,13 +4750,13 @@ data.year = {
             {
                "label":"Dataset 1",
                "data":[
-                  44.81395748
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset 1",
                "data":[
-                  79.87482853
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
@@ -4769,19 +4769,19 @@ data.year = {
             {
                "label":"Dataset",
                "data":[
-                  -3.57
+                  -<?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  85.41
+                  <?php echo rand(1,1000); ?>
                ]
             },
             {
                "label":"Dataset",
                "data":[
-                  62.46
+                  <?php echo rand(1,1000); ?>
                ]
             }
          ]
