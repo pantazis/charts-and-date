@@ -92,6 +92,7 @@ const tableConfig = {
 //data after selection
 var filteredData;
 var parentDatesChart3=[];
+var hasNoData;
 
 
 $(".dateButton").daterangepicker({
@@ -113,15 +114,13 @@ $(".dateButton").daterangepicker({
   var end = Obj.endDate;
 
   $(this).html(start + ' – ' + end );
+  hasNoData = false;
   getCalendarData(start,end,period);
   getQueriedData();
+  if(hasNoData==true){
+    return;
+  }
   updatecharts();
-
-
-
-
-
-
 
 });
 
@@ -215,7 +214,19 @@ mergeAndGiveData(period);
 
 
 function loopAndPush(Value,arrs){
-      for (const singleValue in Value) {
+      for (const singleValue in Value) {  
+        
+        if( Value[singleValue] == undefined ){          
+          nodata([singleValue]["chart1"]);
+                
+          hasNoData = true;
+          return;
+         
+        }
+
+       
+       
+        
    var datasets = Value[singleValue]["chart1"]["datasets"];
    $(datasets).each(function(index){
     if(arrs.length<datasets.length){
@@ -228,6 +239,32 @@ function loopAndPush(Value,arrs){
 }
 }
 
+
+function nodata(data){
+  
+
+ var charts =[myChart,myChart2,myChart3,myChart4];
+
+  $(charts).each(function(){
+      var Chart = this;
+  
+        // No data is present
+      var ctx = Chart.ctx;
+      var width = Chart.width;
+      var height = Chart.height
+      
+
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = "16px normal 'Helvetica Nueue'";
+      ctx.fillText('No data to display', width / 2, height / 2);
+      ctx.restore();
+
+  });
+  
+}
+
 function joinvalues(sumValue){
   console.log(0);
 
@@ -237,8 +274,11 @@ function joinvalues(sumValue){
   var arrSum2 = [];
   var arrSum3 = [];
 
-
+  
   loopAndPush(sumValue,arrSum);
+  if(hasNoData){
+    return;
+  }
 
 
 
@@ -482,7 +522,7 @@ function createLabel(el,date,period){
 
 
 }
-
+/*
 period = data.year;
 for(var date in period){
   charts = period[date];
@@ -498,6 +538,7 @@ for(var date in period){
   }
 
 }
+*/
 
 
 
