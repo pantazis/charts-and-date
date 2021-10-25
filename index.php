@@ -115,9 +115,18 @@ var hasNoData;
 
 
 $(".dateButton").daterangepicker({
+  ranges: {
+  'Προηγούμενος μήνας': [moment().subtract(1, 'months'), moment()],
+  'Τελευταίοι 6 μήνες': [moment().subtract(180, 'days'), moment()],
+  'Πρηγούμενο έτος': [moment().subtract(1, 'year').add(2,'day').startOf('year'), moment()],
+  'Όλα τα έτη': 'all-time', /* [minDate, maxDate] */
+  'Custom Range': 'custom'
+  },
   minDate: moment(Object.keys(data.day)[0],"DDMMYYYY"),
   firstDayOfWeek: 1,
-  orientation: 'left'
+  orientation: 'left',
+  expanded: true,
+ // forceUpdate: true
   }, function (startDate, endDate, period) {
   Obj.startDate = startDate.format(dateFormat);
   Obj.endDate = endDate.format(dateFormat);
@@ -234,19 +243,19 @@ mergeAndGiveData(period);
 
 
 function loopAndPush(Value,arrs){
-      for (const singleValue in Value) {  
-        
-        if( Value[singleValue] == undefined ){          
+      for (const singleValue in Value) {
+
+        if( Value[singleValue] == undefined ){
           nodata([singleValue]["chart1"]);
-                
+
           hasNoData = true;
           return;
-         
+
         }
 
-       
-       
-        
+
+
+
    var datasets = Value[singleValue]["chart1"]["datasets"];
    $(datasets).each(function(index){
     if(arrs.length<datasets.length){
@@ -261,18 +270,18 @@ function loopAndPush(Value,arrs){
 
 
 function nodata(data){
-  
+
 
  var charts =[myChart,myChart2,myChart3,myChart4];
 
   $(charts).each(function(){
       var Chart = this;
-  
+
         // No data is present
       var ctx = Chart.ctx;
       var width = Chart.width;
       var height = Chart.height
-      
+
 
       ctx.save();
       ctx.textAlign = 'center';
@@ -282,7 +291,7 @@ function nodata(data){
       ctx.restore();
 
   });
-  
+
 }
 
 function joinvalues(sumValue){
@@ -294,7 +303,7 @@ function joinvalues(sumValue){
   var arrSum2 = [];
   var arrSum3 = [];
 
-  
+
   loopAndPush(sumValue,arrSum);
   if(hasNoData){
     return;
