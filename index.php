@@ -144,16 +144,16 @@ $(".dateButton").daterangepicker({
 
   $(this).html(start + ' – ' + end );
   hasNoData = false;
-  getCalendarData(start,end,period); 
- 
+  getCalendarData(start,end,period);
+
   updatecharts();
   getQueriedData();
   if(hasNoData){
   nodata();
-  
+
   }
   console.log(1);
-  
+
 
 });
 
@@ -250,24 +250,16 @@ if(hasNoData){
 
 
 function loopAndPush(Value,arrs){
-<<<<<<< HEAD
-      for (const singleValue in Value) {  
-        
-        if( Value[singleValue] == undefined ){          
-         
-                
-=======
       for (const singleValue in Value) {
 
         if( Value[singleValue] == undefined ){
           nodata([singleValue]["chart1"]);
 
->>>>>>> c354dd3b1aa6be91ca6a19d396fe1346884d6ff6
           hasNoData = true;
           return;
 
         }
-        
+
 
 
 
@@ -293,15 +285,6 @@ function nodata(data){
 
   $(charts).each(function(){
       var Chart = this;
-<<<<<<< HEAD
-      
-     
-      
-     
-  
-=======
-
->>>>>>> c354dd3b1aa6be91ca6a19d396fe1346884d6ff6
         // No data is present
       var ctx = Chart.ctx;
       var width = Chart.width;
@@ -314,19 +297,13 @@ function nodata(data){
       ctx.font = "16px normal 'Helvetica Nueue'";
       ctx.fillText('No data to display', width / 2, height / 2);
 
-    
+
 
   });
-<<<<<<< HEAD
- 
-  
-=======
-
->>>>>>> c354dd3b1aa6be91ca6a19d396fe1346884d6ff6
 }
 
 function joinvalues(sumValue){
-  
+
 
 
   var parentArr = [];
@@ -408,8 +385,8 @@ return parentArr;
 }
 
 function mergeAndGiveData(period){
- 
-  
+
+
 
 
 
