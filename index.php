@@ -8,27 +8,33 @@
     <link rel="stylesheet" href="scss/daterangepicker.css">
 </head>
 <body>
-<style>
-  .dateButton{
-  line-height: 12px;
-  width: 239px;
-  font-size: 11pt;
-  font-family: 'Roboto';
-  margin-top: 1px;
-  margin-right: 2px;
-  position: absolute;
-  top: 15px;
-  right: 5px;
-  height: 41px;
-  border-radius: 10px;
-}
 
-.daterangepicker .custom-range-buttons button.apply-btn {
-  width: 70%;
-}
-</style>
     <button class="dateButton"  data-bind="daterangepicker: dateRange'">Επιλογή Εύρους Ημερομηνιών</button>
-    <?php include "chart.php"?>
+   
+<div class="parent">
+<div class="canvas-c">
+ 
+    <canvas class="chart1"  ></canvas>
+ 
+</div>
+<div class="canvas-c">
+  
+    <canvas class="chart2" ></canvas>
+ 
+</div>
+<div class="canvas-c">
+  
+    <canvas class="chart3" ></canvas>
+ 
+</div>
+<div class="canvas-c">
+  
+    <canvas class="chart4"  ></canvas>
+  
+</div>
+
+
+</div> 
     <div class="label1"></div>
     <div class="label2"></div>
 
@@ -58,6 +64,14 @@ var chart3= $('.chart3')[0].getContext('2d');
 var myChart3 = new Chart(chart3,chartConfig.chart3);
 var chart4= $('.chart4')[0].getContext('2d');
 var myChart4 = new Chart(chart4,chartConfig.chart4);
+
+
+
+
+
+
+
+
 
 
 
