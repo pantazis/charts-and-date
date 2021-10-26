@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bower_components\knockout-daterangepicker\dist\daterangepicker.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
 </head>
 <body>
 <style>
@@ -34,14 +34,17 @@
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery/src/sizzle/dist/sizzle.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script>
-    <script src="bower_components/moment/locale/el.js"></script>
-    <script src="bower_components/knockout/dist/knockout.js"></script>
-    <script src="bower_components/knockout-daterangepicker/dist/daterangepicker.js?<?=rand(1,1000)?>"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <script type="text/javascript" src="chartdata.js?<?=rand(1,1000)?>"></script>
-    <script type="text/javascript" src="chartconfig.js?<?=rand(1,1000)?>"></script>
+
+
+
+    <script src="js/sizzle.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/el.js"></script>
+    <script src="js/knockout.js"></script>
+    <script src="js/daterangepicker.js?<?=rand(1,1000)?>"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chartdata.js?<?=rand(1,1000)?>"></script>
+    <script src="js/chartconfig.js?<?=rand(1,1000)?>"></script>
 
     <?php include 'data.php' ?>
 
